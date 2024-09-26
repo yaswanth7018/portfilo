@@ -1,0 +1,75 @@
+/* Overall container styles */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 2rem;
+    background-color: #f0f2f5; /* Light background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Heading styles */
+  .auth-container h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Darker text */
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem; /* Spacing between form elements */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 1rem;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+  }
+  
+  /* Error message styles */
+  .auth-container p {
+    color: #D8000C; /* Red for error messages */
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+  }
+  
+  /* Button styles */
+  button[type="submit"] {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #388E3C; /* Darker green on hover */
+  }
+  
+  button[type="submit"]:disabled {
+    opacity: 0.5; /* Disable button visually */
+    cursor: default; /* Remove pointer on disabled button */
+  }
